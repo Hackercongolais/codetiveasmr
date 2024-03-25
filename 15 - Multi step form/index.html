@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multistep Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+
+  <div class="progress">
+    <div class="progress-element">
+      <div class="circle circle-active" id="1">1</div>
+      <div class="progress-content">
+        <div class="progress-step">STEP 1</div>
+        <div class="progress-text">YOUR INFO</div>
+      </div>
+    </div>
+    <div class="progress-element">
+      <div class="circle" id="2">2</div>
+      <div class="progress-content">
+        <div class="progress-step">STEP 2</div>
+        <div class="progress-text">SELECT PLAN</div>
+      </div>
+    </div>
+    <div class="progress-element">
+      <div class="circle" id="3">3</div>
+      <div class="progress-content">
+        <div class="progress-step">STEP 3</div>
+        <div class="progress-text">ADD-ONS</div>
+      </div>
+    </div>
+    <div class="progress-element">
+      <div class="circle" id="4">4</div>
+      <div class="progress-content">
+        <div class="progress-step">STEP 4</div>
+        <div class="progress-text">SUMMARY</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- DO FIRST FORM and general styles button prev.. so everything in form 1 -->
+  
+  <div class="container-form">
+    <div  class="form hidden">
+      <div class="form-title">Personal info</div>
+      <div class="form-subtitle">Please provide your name, email address, and phone number.</div>
+      <div class="form-content">
+        <div class="form-input">
+          <div class="input-label">Name</div>
+          <input type="text" id="name" placeholder="eg. Stephen King">
+        </div>
+        <div class="form-input">
+          <div class="input-label">Email Address</div>
+          <input type="text" id="email" placeholder="eg. stephenking@lorem.com">
+        </div>
+        <div class="form-input">
+          <div class="input-label">Phone Number</div>
+          <input type="text" id="phone" placeholder="eg. +12 123 456 789">
+        </div>
+      </div>
+    </div>
+    
+    <div class="hidden form">
+      <div class="form-title">Select your plan</div>
+      <div class="form-subtitle">You can choose from 3 tiers.</div>
+      
+      <div class="container-plans">
+        <button class="btn-plan btn-active" id="arcade">
+          <img src="assets/icon-arcade.svg" alt="">
+          <div class="plan-name">Arcade</div>
+          <div class="plan-price">$9/mo</div>
+        </button>
+        <button class="btn-plan" id="advanced">
+          <img src="assets/icon-advanced.svg" alt="">
+          <div class="plan-name">Advanced</div>
+          <div class="plan-price">$12/mo</div>
+        </button>
+        <button class="btn-plan" id="pro">
+          <img src="assets/icon-pro.svg" alt="">
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">$15/mo</div>
+        </button>
+      </div>
+      
+    </div>
+
+    <div class="hidden form">
+      <div class="form-title">Pick add-ons</div>
+      <div class="form-subtitle">Add-ons help enhance your gaming experience.</div>
+      
+      <div class="container-addons">
+        <div class="container-addon">
+          <input type="checkbox" id="addon-1">
+          <div class="addon-content">
+            <div class="plan-name">Online Service</div>
+            <div class="plan-price">Access to multiplayer games</div>
+          </div>
+          <div class="addon-price">+1$/mo</div>
+        </div>
+        <div class="container-addon">
+          <input type="checkbox" id="addon-2">
+          <div class="addon-content">
+            <div class="plan-name">Larger storage</div>
+            <div class="plan-price">Extra 1TB of cloud storage</div>
+          </div>
+          <div class="addon-price">+2$/mo</div>
+        </div>
+        <div class="container-addon">
+          <input type="checkbox" id="addon-3">
+          <div class="addon-content">
+            <div class="plan-name">Customizable profile</div>
+            <div class="plan-price">Custom theme on your profile</div>
+          </div>
+          <div class="addon-price">+2$/mo</div>
+        </div>
+      </div>
+    </div>
+          <div class="form hidden">
+            <div class="form-title">Finishing up</div>
+            <div class="form-subtitle">Add-ons help enhance your gaming experience.</div>
+            
+            <div class="summary-container">
+              <div class="summary-row">
+                <div class="summary-title bold">Arcade</div>
+                <div class="summary-price bold">$9/mo</div>
+              </div>
+              <div class="line"></div>
+              <div class="summary-addons">
+                <div class="summary-row">
+                  <div class="summary-title">Arcade</div>
+                  <div class="summary-price">$9/mo</div>
+                </div>
+                <div class="summary-row">
+                  <div class="summary-title">Arcade</div>
+                  <div class="summary-price">$9/mo</div>
+                </div>
+              </div>
+              <div class="summary-row">
+                <div class="total">Total</div>
+                <div class="total-sum">$12/mo</div>
+              </div>
+            </div>
+         
+            </div>
+          
+    <div class="container-buttons">
+      <button class="btn-prev">Go Back</button>
+      <button class="btn-next">Next Step</button>
+      <button class="btn-confirm hidden">Confirm</button>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
