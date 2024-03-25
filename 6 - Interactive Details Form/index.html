@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="container-left">
+    <img class="card-img-front" src="/images/bg-card-front.png" />
+    <img class="card-img-back" src="/images/bg-card-back.png" />
+    <div class="card-info card-number">0000 0000 0000 0000</div>
+    <div class="card-info card-name">CODETIVE</div>
+    <div class="card-info card-expiry">00/00</div>
+    <div class="card-info card-cvc">000</div>
+  </div>
+
+
+  <div class="container-right">
+    <div class="input-container">
+       <div class="input-label">CARDHOLDER NAME</div>
+       <input class="input-name" placeholder="eg. Jane Appleseed"/>
+    </div>
+    <div class="input-container">
+      <div class="input-label">CARD NUMBER</div>
+      <input class="input-number" placeholder="eg. 1234 1234 1234 1234" maxlength="16"/>
+   </div>
+   <div class="container-bottom-inputs">
+     <div class="input-container">
+       <div class="input-label">EXP. DATE (MM/YYY)</div>
+       <div class="input-double">
+         <input class="input-MM" placeholder="MM" maxlength="2"/>
+         <input class="input-YY" placeholder="YY" maxlength="2"/>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="input-label">CVC</div>
+        <input class="input-cvc" placeholder="eg. 123" maxlength="3"/>
+       </div>
+    </div>
+    <button class="btn-confirm">Confirm</button>
+  </div>
+</body>
+</html>

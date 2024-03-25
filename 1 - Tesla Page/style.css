@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 32px;
+    padding-block: 16px;
+}
+
+.logo {
+    height: 20px;
+    width: 130px;
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(23, 26, 32);
+    letter-spacing: 0.2px;
+}
+
+.container-header-mid, 
+.container-header-right {
+    display: flex;
+    gap: 32px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.header-model {
+    color: rgb(23, 26, 32);
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+.header2-info {
+    color: rgb(23, 26, 32);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 400px;
+}
+
+.header2-model-s {
+    margin-bottom: 450px;
+}
+
+.container-buttons {
+    position: absolute;
+    bottom: 70px;
+}
+
+.btn-left {
+    border: none;
+    background-color: rgba(23, 26, 32, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    height: 40px;
+    width: 264px;
+    border-radius: 5px;
+    margin-right: 24px;
+    font-family: inherit;
+}
+
+.btn-right {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(23, 26, 32);
+    height: 40px;
+    width: 264px;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.bg-model-3 {
+    background-image: url(/assets/model-3.jpg);
+}
+
+.bg-model-y {
+    background-image: url(/assets/model-y.jpg);
+}
+
+.bg-model-s {
+    background-image: url(/assets/model-s.jpg);
+}
+
+.bg-model-x {
+    background-image: url(/assets/model-x.jpg);
+}
+
+.bg-solar-panels {
+    background-image: url(/assets/solar-panel.jpg);
+}
+
+.bg-solar-roof {
+    background-image: url(/assets/solar-roof.jpg);
+}
